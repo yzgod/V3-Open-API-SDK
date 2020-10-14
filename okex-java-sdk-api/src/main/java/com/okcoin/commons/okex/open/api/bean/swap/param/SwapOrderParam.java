@@ -10,6 +10,68 @@ public class SwapOrderParam {
     private String trigger_price;
     private String algo_price;
 
+    // 新增止盈止损 ========= yz
+    // 止盈触发价格
+    private String tp_trigger_price;
+    // 止盈价格
+    private String tp_price;
+    // 止盈类型 1-限价 2-市价
+    private String tp_trigger_type;
+    // 止损触发价格
+    private String sl_trigger_price;
+    // 止损价格
+    private String sl_price;
+    // 止损类型 1-限价 2-市价
+    private String sl_trigger_type;
+
+    public String getTp_trigger_price() {
+        return tp_trigger_price;
+    }
+
+    public void setTp_trigger_price(String tp_trigger_price) {
+        this.tp_trigger_price = tp_trigger_price;
+    }
+
+    public String getTp_price() {
+        return tp_price;
+    }
+
+    public void setTp_price(String tp_price) {
+        this.tp_price = tp_price;
+    }
+
+    public String getTp_trigger_type() {
+        return tp_trigger_type;
+    }
+
+    public void setTp_trigger_type(String tp_trigger_type) {
+        this.tp_trigger_type = tp_trigger_type;
+    }
+
+    public String getSl_trigger_price() {
+        return sl_trigger_price;
+    }
+
+    public void setSl_trigger_price(String sl_trigger_price) {
+        this.sl_trigger_price = sl_trigger_price;
+    }
+
+    public String getSl_price() {
+        return sl_price;
+    }
+
+    public void setSl_price(String sl_price) {
+        this.sl_price = sl_price;
+    }
+
+    public String getSl_trigger_type() {
+        return sl_trigger_type;
+    }
+
+    public void setSl_trigger_type(String sl_trigger_type) {
+        this.sl_trigger_type = sl_trigger_type;
+    }
+
     public String getAlgo_type() {
         return algo_type;
     }
